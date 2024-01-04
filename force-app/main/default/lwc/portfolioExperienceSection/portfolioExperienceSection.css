@@ -1,0 +1,120 @@
+.container{
+    display: flex;
+    padding: 30px;
+    background-color: #D0D5DF;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.experience{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.designation{
+    font-size: x-large;
+}
+
+.company{
+    color: #daa49a;
+}
+
+.field{
+    color: #daa49a;
+}
+
+.details{
+    text-align: justify;
+    font-size: smaller;
+}
+
+.logo{
+    width: 40%;
+}
+
+.img{
+    width: 50%;
+    height: auto;
+    margin-left: 10%;
+}
+
+.skills{
+    padding: 20px;
+    font-size: small;
+    font-weight: 600;
+}
+
+.skills ul li {
+    display: inline;
+    padding: 5px;
+    margin: 10px;
+    color: #CB8174;
+    text-decoration: underline;
+}
+
+@media(max-width: 950px){
+    .container{
+        padding: 0px 
+    }
+    .experience{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .designation{
+        font-size: medium;
+    }
+    
+    .tenure{
+        font-size: small;
+    }
+    .details{
+        font-size: x-small;
+    }
+    
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .img{
+        width: 50%;
+        height: auto;
+        margin-left: 0%;
+    }
+    .exp{
+        width: 100%;
+    }    
+    .skills{
+        width: 100%;
+        padding: 2px;
+        font-size: x-small;
+        font-weight: 600;
+    }
+    
+    .skills ul li {
+        display: inline-block;
+        padding: 5px;
+        color: #CB8174;
+        margin: 0px;
+    }
+}
+
+@media(max-width: 950px){
+    .img{
+        width: 25%;
+    }
+    .designation{
+        font-size: large;
+    }
+    
+    .tenure{
+        font-size: medium;
+    }
+    .details{
+        font-size: small;
+    }
+    .skills{
+        font-size: small;
+    }
+}

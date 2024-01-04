@@ -1,0 +1,15 @@
+<template>
+    <div class="background">
+        <c-my-portfolio-navigation 
+                        onnavigationhandle={handleNavigation}>
+        </c-my-portfolio-navigation>
+        <c-portfolio-body 
+                        show-about={showAbout}
+                        show-experience={showExperience}
+                        show-project={showProject}
+                        show-skills={showSkills}
+                        show-contact={showContact}>
+        </c-portfolio-body>
+        <c-portfolio-footer></c-portfolio-footer>
+    </div>
+</template>

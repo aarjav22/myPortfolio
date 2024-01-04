@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D0D5DF;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.headline{
+    padding: 10px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 600;
+    color: #DAA49A;
+}
+
+.subheading{
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    font-size: large;
+}
+
+.field{
+    width: 100%;
+}
+
+input[type=text],textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background: #c0c5d0;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #DAA49A;
+    color: #3A4255;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+  }

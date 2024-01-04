@@ -1,0 +1,17 @@
+<template>
+    <template lwc:if={showAbout}>
+        <c-portfolio-about-section></c-portfolio-about-section>
+    </template>
+    <template lwc:if={showExperience}>
+        <c-portfolio-experience-section></c-portfolio-experience-section> 
+    </template>
+    <template lwc:if={showProject}>
+        <c-portfolio-project-section></c-portfolio-project-section>
+    </template>
+    <template lwc:if={showSkills}>
+        <c-portfolio-skills-section></c-portfolio-skills-section>
+    </template>
+    <template lwc:if={showContact}>
+        <c-portfolio-contact-section></c-portfolio-contact-section>
+    </template>
+</template>

@@ -1,0 +1,27 @@
+.footer{
+    background-color: #3A4255;
+    color: #DAA49A;
+    text-align: center;
+}
+.socialLink{
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
+
+.icon{
+    width: 50px;
+    padding: 10px;
+}
+
+.seperateLine{
+    margin: auto;
+    width: 60%;
+}
+
+.copyright{
+    font-weight: normal;
+    font-size: small;
+    padding: 15px;
+    font-family: math;
+}
