@@ -22,7 +22,7 @@
     font-size: large;
 }
 
-.field{
+.field, .button{
     width: 100%;
 }
 
@@ -46,3 +46,29 @@ input[type=submit] {
     cursor: pointer;
     font-weight: 600;
   }
+
+@media (max-width: 450px) {
+    .textfield{
+        padding: 10% 10% 0% 10%;
+        font-size: small;
+    }
+
+    .field{
+        font-size: small;
+        padding: 0 10% 0 10%;
+    }
+
+    .button{
+        font-size: small;
+        padding: 0 10% 10% 10%;
+    }
+
+    .headline{
+        font-size: larger;
+        padding: 10% 10% 0% 10%;
+    }
+
+    .subheading{
+        font-size: smaller;
+    }
+}

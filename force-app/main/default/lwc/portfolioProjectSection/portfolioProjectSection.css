@@ -1,7 +1,67 @@
 .container{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 30px;
     background-color: #D0D5DF;
     min-height: 100vh;
+    flex-direction: column;
+}
+
+.ProjectName{
+    font-size: x-large;
+}
+
+.details{
+    text-align: justify;
+    font-size: smaller;
+}
+
+.skills{
+    padding: 20px;
+    font-size: small;
+    font-weight: 600;
+}
+
+.skills ul li {
+    display: inline;
+    padding: 5px;
+    margin: 10px;
+    color: #CB8174;
+    text-decoration: underline;
+}
+
+@media(max-width: 950px){
+    .container{
+        padding: 10%;
+    }
+    .ProjectName{
+        font-size: medium;
+    }
+
+    .details{
+        font-size: x-small;
+    }
+
+    .skills{
+        width: 100%;
+        padding: 2px;
+        font-size: x-small;
+        font-weight: 600;
+    }
+    
+    .skills ul li {
+        display: inline-block;
+        padding: 5px;
+        color: #CB8174;
+        margin: 0px;
+    }
+}
+
+@media(max-width: 950px){
+    .ProjectName{
+        font-size: large;
+    }
+
+    .details, .skills{
+        font-size: small;
+    }
 }
