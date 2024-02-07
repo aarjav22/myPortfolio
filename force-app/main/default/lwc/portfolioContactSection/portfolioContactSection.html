@@ -5,20 +5,20 @@
             <p class="subheading">Got a question or proposal, or just want to say hello? Go ahead.</p>
         </div>
         <div class="details">
-            <form>
+            <form onsubmit = {createContactRecord}>
                 <div class="textfield">
                     <label for="name">Your Name</label>
-                    <input type="text" id="name" name="firstname" placeholder="Your name..">
+                    <input type="text" id="name" name="firstname" placeholder="Your name.." onchange = {getName}>
 
                     <label for="email">Email Address</label>
-                    <input type="text" id="email" name="emailid" placeholder="Your email address..">
+                    <input type="text" id="email" name="emailid" placeholder="Your email address.." onchange = {getEmail}>
                 </div>
                 <div class="field">
                     <label for="subject">Your Message</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" onchange = {getMessage}></textarea>
                 </div>
                 <div class="button">
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Shoot">
                 </div>
             </form>
         </div>

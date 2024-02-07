@@ -2,7 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #D0D5DF;
+    background-color: #1F221B;
+    color: #D7D7D7;
     min-height: 100vh;
     flex-direction: column;
 }
@@ -12,7 +13,7 @@
     text-align: center;
     font-size: xx-large;
     font-weight: 600;
-    color: #DAA49A;
+    color: #E6AF2E;
 }
 
 .subheading{
@@ -32,13 +33,14 @@ input[type=text],textarea {
     margin: 8px 0;
     border: 2px solid #ccc;
     border-radius: 10px;
-    background: #c0c5d0;
+    color: #1F221B;
+    background: #D7D7D7;
 }
 
 input[type=submit] {
     width: 100%;
-    background-color: #DAA49A;
-    color: #3A4255;
+    background-color: #E6AF2E;
+    color: #1F221B;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -50,16 +52,16 @@ input[type=submit] {
 @media (max-width: 450px) {
     .textfield{
         padding: 10% 10% 0% 10%;
-        font-size: small;
+        font-size: x-small;
     }
 
     .field{
-        font-size: small;
+        font-size: x-small;
         padding: 0 10% 0 10%;
     }
 
     .button{
-        font-size: small;
+        font-size: x-small;
         padding: 0 10% 10% 10%;
     }
 
@@ -70,5 +72,11 @@ input[type=submit] {
 
     .subheading{
         font-size: smaller;
+    }
+}
+
+@media(max-width: 950px ) and (min-width: 450px) {
+    .container{
+        padding: 10%;
     }
 }

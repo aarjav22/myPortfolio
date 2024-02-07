@@ -1,9 +1,20 @@
 .container{
-    display: flex;
-    padding: 30px;
-    background-color: #D0D5DF;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: max-content;
+    padding: 20px;
+    grid-gap: 20px;
+    background-color: #1F221B;
     min-height: 100vh;
-    flex-direction: column;
+    color: #D7D7D7;
+}
+
+.project{
+    width: 100%;
+    padding: 30px;
+    height: fit-content;
+    border: 2px solid #E6AF2E;
+    border-radius: 40px;
 }
 
 .ProjectName{
@@ -15,8 +26,16 @@
     font-size: smaller;
 }
 
+.badge{
+    background-color: #E6AF2E;
+    color: #1F221B;
+    padding: 4px 10px;
+    text-align: center; 
+    border-radius: 50px;
+}
+
 .skills{
-    padding: 20px;
+    padding: 20px 0px 0px 10px;;
     font-size: small;
     font-weight: 600;
 }
@@ -24,15 +43,51 @@
 .skills ul li {
     display: inline;
     padding: 5px;
-    margin: 10px;
-    color: #CB8174;
-    text-decoration: underline;
 }
 
-@media(max-width: 950px){
-    .container{
-        padding: 10%;
+@media(max-width: 950px) and (min-width: 450px) {
+    .ProjectName{
+        font-size: larger;
     }
+
+    .details{
+        font-size: small;
+    }
+
+    .badge{
+        font-size: xx-small;
+    }
+
+    .project{
+        padding: 20px;  
+    }
+
+    .skills{
+        width: 100%;
+        padding: 2px;
+        font-size: small;
+        font-weight: 600;
+    }
+    
+    .skills ul li {
+        display: inline-block;
+        padding: 5px;
+        margin: 0px;
+    }
+}
+
+
+@media(max-width: 450px) {
+    .container{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project{
+        padding: 15px;
+    }
+
     .ProjectName{
         font-size: medium;
     }
@@ -41,27 +96,14 @@
         font-size: x-small;
     }
 
-    .skills{
-        width: 100%;
-        padding: 2px;
-        font-size: x-small;
-        font-weight: 600;
-    }
-    
     .skills ul li {
         display: inline-block;
         padding: 5px;
-        color: #CB8174;
         margin: 0px;
     }
-}
 
-@media(max-width: 950px){
-    .ProjectName{
-        font-size: large;
-    }
-
-    .details, .skills{
-        font-size: small;
+    .skills{
+        padding: 5px;
+        font-size: xx-small;    
     }
 }

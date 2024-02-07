@@ -1,8 +1,9 @@
 .footer{
-    background-color: #3A4255;
-    color: #DAA49A;
+    background-color: #191716;
+    color: #D7D7D7;
     text-align: center;
 }
+
 .socialLink{
     display: flex;
     justify-content: center;
@@ -10,8 +11,17 @@
 }
 
 .icon{
-    width: 50px;
     padding: 10px;
+}
+
+.iconImg:hover  {
+    filter: none;
+}
+
+.iconImg{
+    max-width: 70%;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
 }
 
 .seperateLine{
@@ -23,4 +33,16 @@
     font-weight: normal;
     font-size: small;
     padding: 15px;
+}
+
+@media(max-width: 450px){
+    .iconImg{
+        max-width: 100%;
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+    }
+
+    .copyright{
+        font-size: x-small;
+    }
 }

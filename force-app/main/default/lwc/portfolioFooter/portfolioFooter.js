@@ -17,5 +17,4 @@ export default class PortfolioFooter extends LightningElement {
     trailheadUrl = 'https://www.salesforce.com/trailblazer/aarjav1999';
     leetcodeUrl = 'https://leetcode.com/aarjav_22/';
     hackerrankUrl = 'https://www.hackerrank.com/profile/aarjavjain';
-
 }

@@ -1,14 +1,25 @@
 <template>
     <div class="container">
-        <div class="profilepic">
-            <img class="img" src={imageUrl} alt="">
-        </div>
         <div class="info">
             <p class="hi">Hi, I'm</p>
-            <p class="name"><span style="color: #CB8174;">Aarjav </span>Jain</p>
+            <p class="name"><span style="color: #E6AF2E;">Aarjav </span>Jain</p>
             <p class="about">
-                I am a Senior Software Engineer with over 2.5+ years of experience specializing in Salesforce development. 
+                Seasoned Salesforce Artisan with a rich 2.5+ years of crafting immersive digital experiences. 
             </p>
+            <div class="socialLink">
+                <div class="icon">
+                    <a href={twitterUrl} target="_blank"><img class="iconImg" src={twitterIcon}></a>
+                </div>        
+                <div class="icon">
+                    <a href={linkedinUrl} target="_blank"><img class="iconImg" src={linkedInIcon}></a>
+                </div>       
+                <div class="icon">
+                    <a href={instagramUrl} target="_blank"><img class="iconImg" src={instagramIcon}></a>
+                </div>
+            </div>
+        </div>
+        <div class="profilepic">
+            <img class="img" src={imageUrl} alt="">
         </div>
     </div>
 </template>

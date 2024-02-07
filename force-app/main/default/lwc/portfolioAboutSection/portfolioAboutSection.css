@@ -1,49 +1,85 @@
 .container{
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: #D0D5DF;
+    justify-content: space-around;
+    background-color: #1F221B;
     min-height: 100vh;
 }
 
-.img{
-    width: 100%;
-    padding: 10%;
-    object-fit: cover;
+.profilepic{
+    width: 50%;
+    align-self: flex-end;
 }
 
-.profilepic{
-    background-color: #929CB5;
-    width: 25%;
-    text-align: center;
-    border-radius: 10%;
-    border-top: 8px solid #daa49a;
+.img {
+    max-width: 70%;
+    height: auto;
 }
 
 .info{
-    width: 40%;
-    padding-left: 10%;
+    width: 50%;
+    padding: 5%;
+    text-align: end;
 }
 
 .hi{
     font-size: x-large;
+    color: #D7D7D7;
 }
 
 .name{
     font-size: xxx-large;
+    color: #D7D7D7;
 }
 
 .about{
     font-size: medium;
+    color: #D7D7D7;
+    margin-left: 35%;
+}
+
+.socialLink{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10px;
+}
+
+.icon{
+    width: 45px;
+    padding: 8px;
+    border: 2px solid #E6AF2E;
+    border-radius: 50%;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.icon a{
+    transition: filter 0.3s ease;
+}
+
+.icon:hover{
+    background-color: #E6AF2E;
+    border: 2px solid #D7D7D7;
+}
+
+.icon a:hover{
+    filter: grayscale(100%) brightness(40%) contrast(170%) sepia(10%) hue-rotate(180deg);
 }
 
 @media(max-width: 450px){
     .container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
         flex-direction: column;
-        padding: 10%;
+        justify-content: end;
+    }
+
+    .socialLink{
+        justify-content: center;
+    }
+
+    .icon{
+        width: 35px;
+        padding: 4px;
     }
 
     .info{
@@ -51,58 +87,39 @@
         padding: 10%;
     }
     
-    .img{
-        width: 100%;
-        padding: 10%;
-        object-fit: cover;
-    }
-    
     .profilepic{
-        background-color: #929CB5;
-        width: 90%;
-        text-align: center;
-        border-radius: 10%;
-        border-top: 8px solid #daa49a;
+        width: 100%;
     }
+
+    .img{
+        max-width: 100%;
+    }
+
     .hi{
         font-size: medium;
     }
-    
+
     .name{
         font-size: xx-large;
     }
     
     .about{
         font-size: small;
+        margin: 0%;
     }
 }
 
 @media(max-width: 950px ) and (min-width: 450px) {
-    .container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10%;
+    .icon{
+        width: 40px;
+        padding: 7px;
     }
 
-    .info{
-        width: 100%;
-        padding: 10%;
-    }
-    
     .img{
-        width: 100%;
-        padding: 10%;
-        object-fit: cover;
+        max-width: 100%;
+        height: auto;
     }
-    
-    .profilepic{
-        background-color: #929CB5;
-        width: 80%;
-        text-align: center;
-        border-radius: 10%;
-        border-top: 8px solid #daa49a;
-    }
+
     .hi{
         font-size: large;
     }
@@ -113,5 +130,6 @@
     
     .about{
         font-size: smaller;
+        margin: 0%;
     }
 }
