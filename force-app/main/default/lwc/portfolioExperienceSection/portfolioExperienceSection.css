@@ -5,6 +5,7 @@
     min-height: 100vh;
     flex-direction: column;
     color: #D7D7D7;
+    row-gap: 40px;
 }
 
 .experience{
